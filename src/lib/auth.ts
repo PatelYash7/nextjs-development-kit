@@ -32,8 +32,10 @@ export const authOptions: NextAuthOptions = {
 	],
 	secret: process.env.NEXTAUTH_SECRET || 'JaiShreeRaam',
 	pages: {
-		signIn: '/signin',
-		newUser: '/signup',
+		// You can Specify the specific page for the Custom pages.
+
+		// signIn: '/signin',
+		// newUser: '/signup',
 	},
 	callbacks: {
 		async jwt({ token, user, session, trigger }) {
