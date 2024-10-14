@@ -10,9 +10,6 @@
     "format": "prettier . --write",
     "check": "prettier . --check"
   },
-  "prisma": {
-    "schema": "src/db/schema.prisma"
-  },
   "dependencies": {
     "@prisma/client": "^5.19.0",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
