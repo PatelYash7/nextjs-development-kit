@@ -19,7 +19,7 @@ declare module 'next-auth' {
 			number?: string;
 			role?: string;
 		} & DefaultSession['user'];
-	} 
+	}
 }
 
 declare module 'next-auth/jwt' {

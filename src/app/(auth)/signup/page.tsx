@@ -43,10 +43,15 @@ export default function SignUpPage() {
 		<div className='min-h-screen py-8 flex items-center justify-center bg-black bg-[linear-gradient(rgba(0,0,0,.5)_2px,transparent_2px),linear-gradient(90deg,rgba(0,0,0,.5)_2px,transparent_2px)] bg-[size:50px_50px]'>
 			<Card className='w-full max-w-md bg-[#111] text-white border-none shadow-2xl'>
 				<CardHeader className='space-y-1 text-center'>
-					<h1 className='text-3xl font-bold tracking-tight mb-2'>
+					<h1
+						onClick={() => {
+							router.push('/');
+						}}
+						className='text-3xl cursor-pointer font-bold tracking-tight mb-2'
+					>
 						Product Name
 					</h1>
-					<p className='text-sm text-gray-400'>Short Description of Product</p>
+					<p className='text-sm text-gray-400'>This is sample login page.</p>
 					<p className='text-sm text-gray-400'>
 						Already have an account?{' '}
 						<Link href='/signin' className='text-blue-500 hover:underline'>

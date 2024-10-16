@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output:'standalone',
-    images: {
-        unoptimized: true,
-    },
-    // Header for all the Inbuilt API Routes.
-    async headers() {
+	output: 'standalone',
+	images: {
+		unoptimized: true,
+	},
+	// Header for all the Inbuilt API Routes.
+	async headers() {
 		return [
 			{
 				// matching all API routes

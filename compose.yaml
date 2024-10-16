@@ -9,14 +9,14 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - db-data:/var/lib/postgresql/data  
-  app:
-    build: .
-    ports:
-      - '3000:3000'
-    environment:
-      DATABASE_URL: postgres://postgres:password@db:5432/saas-template
-    depends_on:
-      - db
+      - db-data:/var/lib/postgresql/data
+  # app:
+  #   build: .
+  #   ports:
+  #     - '3000:3000'
+  #   environment:
+  #     DATABASE_URL: postgres://postgres:password@db:5432/saas-template
+  #   depends_on:
+  #     - db
 volumes:
   db-data:
