@@ -100,6 +100,8 @@ export const authOptions: NextAuthOptions = {
 				if (UserExist) {
 					// Store user ID in token
 					user.id = UserExist.id;
+					user.role = UserExist.role;
+					user.number = UserExist.MobileNumber as string;
 				} else {
 					const NewUser = await prisma.user.create({
 						data: {
@@ -111,6 +113,9 @@ export const authOptions: NextAuthOptions = {
 					});
 					// Store new user's ID in token
 					user.id = NewUser.id;
+					user.role = NewUser.role;
+					user.number = NewUser.MobileNumber as string;
+				
 				}
 			}
 			// if credential signin then we already have a user and you can create an token.
@@ -168,5 +173,12 @@ export const authOptions: NextAuthOptions = {
 			}
 			return true;
 		},
+	},
+	jwt: {
+		maxAge: 30 * 24 * 60 * 60,
+	},
+	session: {
+		strategy: 'jwt',
+		maxAge: 30 * 24 * 60 * 60,
 	},
 };
