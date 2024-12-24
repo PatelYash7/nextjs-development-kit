@@ -22,6 +22,7 @@ export default async function Home() {
 				<div className='text-3xl md:text-5xl font-bold dark:text-white text-center'>
 					Effortless NextJS Starter Kit for Developers
 				</div>
+				<div className='py-4 text-xl text-gray-400 dark:text-gray-400'>In cmd type <span className='text-white font-bold'> npx next-development-kit </span>to get started</div>
 				<p className='text-xl md:text-xl px-24 py-8 font-semibold dark:text-gray-400 text-gray-400  text-center'>
 					This template is designed for modern developers who want to focus on
 					business logic while minimizing setup time.
