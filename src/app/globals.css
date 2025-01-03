@@ -58,7 +58,9 @@
 		--chart-5: 340 75% 55%;
 	}
 }
-
+.manrope {
+	font-family: var(--man-rope)
+}
 @layer base {
 	* {
 		@apply border-border;

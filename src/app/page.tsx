@@ -19,7 +19,7 @@ export default async function Home() {
 	return (
 		<>
 			<FloatingNav navItems={navItems} />
-			<AuroraBackground className='sm:px-48 '>
+			<AuroraBackground className='sm:px-48 manrope'>
 				<div className=' text-xl sm:text-3xl md:text-5xl font-bold dark:text-white text-center'>
 					Effortless NextJS Starter Kit for Developers
 				</div>
